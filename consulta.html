@@ -26,12 +26,12 @@
         <a class="navbar-brand" href="#">
            <img src="./assets/imagens/logo.png" width="50" height="35" alt="Orçamento pessoal">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Cadastro</a>
             </li>
@@ -83,7 +83,7 @@
 
         <div class="col-md-6">
           <select class="form-control" id="tipo">
-            <option>Tipo</option>
+            <option selected hidden disabled value="">Tipo</option>
             <option value="1">Alimentação</option>
             <option value="2">Educação</option>
             <option value="3">Lazer</option>
@@ -103,7 +103,7 @@
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onclick="consultaDespesa()">
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -122,7 +122,7 @@
               </tr>
             </thead>
 
-            <tbody>
+            <tbody id="listaDespesas">
             </tbody>
           </table>
         </div>
